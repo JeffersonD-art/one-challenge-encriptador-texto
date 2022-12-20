@@ -79,9 +79,6 @@ body {
     line-height: 150%;
     color: #495057;
 }
-.input__advertencia:before {
-    content: url(/img/Vector.svg);
-}
 
 .input__boton-borrar {
     padding: 5px 30px;
@@ -233,7 +230,7 @@ body {
     }
 }
 
-    /* media 375 */
+/* media 375 */
 
 @media (max-width: 375px) {
     .container {
