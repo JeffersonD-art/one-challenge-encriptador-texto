@@ -80,7 +80,7 @@ body {
     color: #495057;
 }
 .input__advertencia:before {
-    content: url(./img/Vector.png);
+    content: url(/img/Vector.svg);
 }
 
 .input__boton-borrar {
