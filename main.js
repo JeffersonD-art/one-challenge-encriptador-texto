@@ -65,8 +65,15 @@ function copiar() {
     document.execCommand("copy");
     document.getElementById("texto").value = "";
     document.getElementById("tArea");
-    document.getElementById("tArea").style.color = "limegreen";
-    document.getElementById("tArea").value = "Texto copiado";
+    // document.getElementById("tArea").style.color = "limegreen";
+    // document.getElementById("tArea").value = "Texto copiado";
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Texto copiado',
+        showConfirmButton: false,
+        timer: 2000
+      });
 
     foco();
 }
