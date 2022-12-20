@@ -67,6 +67,7 @@ function copiar() {
     document.getElementById("tArea").value = "";
     // document.getElementById("tArea").style.color = "limegreen";
     // document.getElementById("tArea").value = "Texto copiado";
+    foco();
     Swal.fire({
         position: 'center',
         icon: 'success',
@@ -75,7 +76,6 @@ function copiar() {
         timer: 2000
       });
 
-    foco();
 }
 
 function mayusculas() {
