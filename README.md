@@ -12,19 +12,6 @@ _El reto consiste en crear una página web que cifre y descifre el texto que ser
 * ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-## 🔑 Llaves de encriptación
-
-
-
-Las llaves de encriptación solicitadas son las siguientes:
-
-* La letra "a" es convertida a "ai".
-* La letra "e" es convertida a "enter".
-* La letra "i" es convertida a "imes".
-* La letra "o" es convertida a "ober"
-* La letra "u" es convertida a "ufat"
-
-
 ## ✔️ Requisitos del desafío 
 
 
@@ -45,6 +32,28 @@ gaitober" => "gato"
 ### Extras:
 
 * _Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones._
+
+
+## 🔑 Llaves de encriptación
+
+
+
+Las llaves de encriptación solicitadas son las siguientes:
+
+* La letra "a" es convertida a "ai".
+* La letra "e" es convertida a "enter".
+* La letra "i" es convertida a "imes".
+* La letra "o" es convertida a "ober"
+* La letra "u" es convertida a "ufat"
+
+## ✔️ Validación 
+
+### validación de mayusculas 
+![image](https://user-images.githubusercontent.com/71351421/208751572-56bc52a7-41b8-4954-a6b9-a4ae9a6373e7.png)
+
+### validación de caracteres
+![image](https://user-images.githubusercontent.com/71351421/208751719-b27722b2-84a8-4adf-b4de-06b29260daba.png)
+
 
 ## Contact
 
