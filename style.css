@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    height: 100%;
+    background: #d9dddf;
+}
+
+/* globales */
+.boton {
+    border-radius: 24px;
+    line-height: 19px;
+    padding: 24px;
+    width: 328px;
+    font-size: 16px;
+}
+
+.textarea {
+    resize: none;
+    border: none;
+}
+.textarea:focus {
+    outline: none;
+}
+
+.container {
+    width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.encriptador {
+    display: flex;
+    justify-content: space-around;
+    height: 96%;
+}
+.encriptador__img {
+    margin-top: 20px;
+}
+
+/* input */
+.input {
+    height: 70%;
+    align-self: center;
+}
+
+.input__form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.input__texto {
+    height: 80%;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: inherit;
+}
+
+.input__texto::placeholder {
+    color: #0f52a5;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.input__extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input__advertencia {
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+}
+.input__advertencia:before {
+    content: url(/img/Vector.png);
+}
+
+.input__boton-borrar {
+    padding: 5px 30px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    line-height: 19px;
+    text-transform: uppercase;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    color: #0a3871;
+}
+.input__botones {
+    display: flex;
+    gap: 20px;
+}
+
+.input__boton-encriptar {
+    background: #0a3871;
+    color: #ffffff;
+
+    border: none;
+}
+.input__boton-desencriptar {
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    color: #0a3871;
+}
+
+/* output */
+.output {
+    height: 90%;
+    width: 400px;
+    align-self: center;
+    background-color: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.output__form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: relative;
+}
+.output__texto {
+    background-color: inherit;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+}
+
+.output__textarea {
+    height: 90%;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 150%;
+}
+.output__boton {
+    border: 1px solid #0a3871;
+    background-color: #ffffff;
+    color: #0a3871;
+}
+
+.output__tapa {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+}
+.output__parrado1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.output__parrado2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
+
+/* footer */
+.footer {
+    height: auto;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.footer__nombre {
+    display: flex;
+    gap: 5px;
+}
+
+/* media 768 */
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .encriptador {
+        flex-direction: column;
+    }
+
+    .output {
+        width: 90%;
+        height: 30%;
+        margin: 20px 0;
+        overflow: hidden;
+        gap: 20px;
+    }
+
+    .output__boton {
+        width: 100%;
+    }
+
+    .output__form {
+        align-items: center;
+    }
+    .output__textarea {
+        margin-bottom: 20px;
+    }
+
+    .output__tapa {
+        height: 100%;
+        width: 90%;
+    }
+
+    .output__img {
+        display: none;
+    }
+}
+
+    /* media 375 */
+
+@media (max-width: 375px) {
+    .container {
+        width: 90%;
+        height: 100%;
+    }
+
+    .encriptador__logo {
+        margin-bottom: 20px;
+    }
+    .input__extra {
+        width: 100%;
+        margin-bottom: 5px;
+        flex-direction: column-reverse;
+    }
+
+    .input__texto {
+        height: 300px;
+    }
+    .input__botones {
+        align-items: center;
+    }
+
+    .input__boton-borrar {
+        padding: 8px;
+        width: 70%;
+    }
+
+    .input__botones {
+        flex-direction: column;
+    }
+
+    .input__texto {
+        width: 90%;
+    }
+    .output {
+        width: 100%;
+        height: 300px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+}
