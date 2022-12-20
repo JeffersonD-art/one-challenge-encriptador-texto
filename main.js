@@ -64,7 +64,7 @@ function copiar() {
     textCopi.select();
     document.execCommand("copy");
     document.getElementById("texto").value = "";
-    document.getElementById("tArea");
+    document.getElementById("tArea").value = "";
     // document.getElementById("tArea").style.color = "limegreen";
     // document.getElementById("tArea").value = "Texto copiado";
     Swal.fire({
