@@ -1,4 +1,4 @@
- ![Captura](https://user-images.githubusercontent.com/71351421/208697540-7750dbc8-72d9-4c04-90d4-e97ff439c59c.PNG)
+ ![image](https://user-images.githubusercontent.com/71351421/209011231-b94eb974-4cd5-4b2a-bb7e-93a66e3d6391.png)
 # Encriptador de texto
 
 _El reto consiste en crear una página web que cifre y descifre el texto que será ingresado por el usuario y mostrarlo en su forma cifrada o descifrada. El objetivo de este reto es evaluar los conocimientos adquiridos durante el curso "Principiante en programación"._
