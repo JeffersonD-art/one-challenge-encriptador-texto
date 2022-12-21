@@ -87,7 +87,7 @@ function validar() {
             showConfirmButton: true,
             backdrop: `
             rgba(123, 8, 0, 0.4)
-            url("/img/nyan-cat.gif")
+            url("./img/nyan-cat.gif")
             left top
             no-repeat
           `
