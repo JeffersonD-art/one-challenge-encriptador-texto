@@ -71,6 +71,7 @@ function copiar() {
         icon: "success",
         title: "Texto copiado",
         showConfirmButton: false,
+        
         timer: 1500,
     });
 }
@@ -85,6 +86,7 @@ function validar() {
             icon: 'error',
             title: 'Solo letras minúsculas y sin acentos',
             showConfirmButton: true,
+            background: '#f8ed8f',
             backdrop: `
             rgba(123, 8, 0, 0.4)
             url("./img/nyan-cat.gif")

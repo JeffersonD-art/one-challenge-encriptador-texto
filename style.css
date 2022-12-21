@@ -4,19 +4,26 @@
     box-sizing: border-box;
 }
 
+:root {
+    --morado: #828ad0;
+    --celeste: #60d4d4;
+    --fondo: #f8ed8f;
+}
+/* globales */
+
 body {
     font-family: "Inter", sans-serif;
-    height: 100%;
-    background: #d9dddf;
+    background: var(--fondo);
+    height: 100vh;
 }
 
-/* globales */
 .boton {
-    border-radius: 24px;
     line-height: 19px;
     padding: 24px;
     width: 328px;
-    font-size: 16px;
+    font-size: 20px;
+    border: 4px solid #000000;
+    box-shadow: 6px 8px 0px 2px #000000;
 }
 
 .textarea {
@@ -44,7 +51,7 @@ body {
 
 /* input */
 .input {
-    height: 70%;
+    height: 90%;
     align-self: center;
 }
 
@@ -52,13 +59,18 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+
+    gap: 50px;
 }
 
 .input__texto {
     height: 80%;
+    padding: 10px;
     font-size: 32px;
     line-height: 150%;
-    background-color: inherit;
+    background: #f3f5fc;
+    border: 4px solid #000000;
+    box-shadow: 15px 15px 0px -5px #000000;
 }
 
 .input__texto::placeholder {
@@ -70,21 +82,37 @@ body {
 
 .input__extra {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
+    position: relative;
+}
+
+.extra__smilei {
+    position: absolute;
+    left: -170px;
+}
+
+.extra__vectorp {
+    position: absolute;
+    left: -50px;
+}
+.extra__vector {
+    position: absolute;
+    left: 0;
 }
 
 .input__advertencia {
+    position: absolute;
     font-size: 12px;
     line-height: 150%;
     color: #495057;
+    left: 20px;
 }
 
 .input__boton-borrar {
-    padding: 5px 30px;
-    margin-bottom: 5px;
+    padding: 7px 20px;
+    width: auto;
     font-size: 16px;
-    border-radius: 10px;
     line-height: 19px;
     text-transform: uppercase;
     background: #d8dfe8;
@@ -97,14 +125,11 @@ body {
 }
 
 .input__boton-encriptar {
-    background: #0a3871;
+    background: var(--morado);
     color: #ffffff;
-
-    border: none;
 }
 .input__boton-desencriptar {
-    background: #d8dfe8;
-    border: 1px solid #0a3871;
+    background: var(--celeste);
     color: #0a3871;
 }
 
@@ -114,10 +139,8 @@ body {
     width: 400px;
     align-self: center;
     background-color: #ffffff;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-    padding: 5px;
-    overflow: hidden;
+    border: 4px solid #000000;
+    box-shadow: 15px 15px 0px -5px #000000;
 }
 
 .output__form {
@@ -125,13 +148,14 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 15px;
+
     position: relative;
 }
 .output__texto {
     background-color: inherit;
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,22 +169,23 @@ body {
     margin: 0 auto;
     font-size: 24px;
     line-height: 150%;
+    padding: 15px;
 }
 .output__boton {
-    border: 1px solid #0a3871;
-    background-color: #ffffff;
+    background-color: #f1e7d1;
     color: #0a3871;
+    margin-bottom: 20px;
 }
 
 .output__tapa {
     height: 100%;
-    width: auto;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: absolute;
     z-index: 10;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 .output__parrado1 {
     font-weight: 700;
@@ -194,35 +219,58 @@ body {
 
 @media (max-width: 768px) {
     .container {
-        width: 100%;
+        width: 100vw;   
+    }
+    .encriptador {
+        height: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
-    .encriptador {
+    .encriptador__logo {
+        align-self: flex-start;
+    }
+
+    .input {
+        width: 90%;
+        height: 40%;
+    }
+
+    .input__form {
         flex-direction: column;
+        gap: 20px;
+    }
+    
+    .extra__smilei,
+    .extra__vectorp {
+        display: none;
+    }
+
+    .input__botones {
+        width: 100%;
+        justify-content: space-between;
     }
 
     .output {
         width: 90%;
         height: 30%;
-        margin: 20px 0;
-        overflow: hidden;
-        gap: 20px;
     }
-
     .output__boton {
-        width: 100%;
-    }
-
-    .output__form {
-        align-items: center;
-    }
-    .output__textarea {
-        margin-bottom: 20px;
+        width: 90%;
+        margin-bottom: 10px;
     }
 
     .output__tapa {
-        height: 100%;
-        width: 90%;
+        width: 100%;
+    }
+
+    .footer {
+        
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
     }
 
     .output__img {
@@ -230,50 +278,28 @@ body {
     }
 }
 
-/* media 480 */
-
 @media (max-width: 480px) {
+
     .container {
-        width: 90%;
         height: 100%;
     }
-
-    .encriptador__logo {
-        margin-bottom: 20px;
+    .encriptador{
+        height: 100%;
     }
-    .input__extra {
-        width: 100%;
-        margin-bottom: 5px;
-        flex-direction: column-reverse;
-    }
-
-    .input__texto {
-        height: 300px;
-    }
-    .input__botones {
-        align-items: center;
-    }
-
-    .input__boton-borrar {
-        padding: 8px;
-        width: 70%;
+    .input {
+        width: 80%;
+        height: 80vh;
     }
 
     .input__botones {
         flex-direction: column;
+        align-items: center;
     }
 
-    .input__texto {
-        width: 90%;
-    }
     .output {
-        width: 100%;
-        height: 300px;
+        width: 80%;
+        height: 40vh;
     }
-
-    .footer {
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-    }
+    
+    
 }
