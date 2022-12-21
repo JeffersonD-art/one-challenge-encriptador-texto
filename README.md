@@ -55,4 +55,3 @@ Las llaves de encriptación solicitadas son las siguientes:
 
 linkedin - [https://www.linkedin.com/in/jefferson-david-cano-hernandez/](https://www.linkedin.com/in/jefferson-david-cano-hernandez/) 
 
-Project Link: [https://github.com/JeffersonD-art/challenge-one-encriptador](https://github.com/JeffersonD-art/challenge-one-encriptador)
