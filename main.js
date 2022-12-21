@@ -3,7 +3,7 @@ const botonD = document.getElementById("botonDec");
 const botonC = document.getElementById("botonCop");
 const botonP = document.getElementById("botonCop");
 const botonB = document.getElementById("botonborrar");
-
+const letras = /[A-Z~!@#$%^&*()_+|}{[\]\\\/?><:"`;.,áéíóúàèìòù'1-9]/g;
 
 function img() {
     var textoVacio = "";
@@ -71,18 +71,28 @@ function copiar() {
         icon: "success",
         title: "Texto copiado",
         showConfirmButton: false,
-        timer: 2000,
+        timer: 1500,
     });
 }
 
-const letras = /[a-z]/g;
 function validar() {
     let nuevomensaje = document.getElementById("texto").value;
-    if (nuevomensaje.match(letras) == nuevomensaje.match(letras)) {
-
-        document.getElementById("texto").placeholder ="Solo letras minúsculas y sin acentos";
+    if (nuevomensaje.match(letras) != null) {
         limpiar();
         foco();
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'Solo letras minúsculas y sin acentos',
+            showConfirmButton: true,
+            backdrop: `
+            rgba(123, 8, 0, 0.4)
+            url("/img/nyan-cat.gif")
+            left top
+            no-repeat
+          `
+           
+          })
     }
 }
 
