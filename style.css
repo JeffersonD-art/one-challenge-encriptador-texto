@@ -230,9 +230,9 @@ body {
     }
 }
 
-/* media 375 */
+/* media 480 */
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
     .container {
         width: 90%;
         height: 100%;
