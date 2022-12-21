@@ -48,11 +48,7 @@ Las llaves de encriptación solicitadas son las siguientes:
 
 ## ✔️ Validación 
 
-### validación de mayusculas 
-![image](https://user-images.githubusercontent.com/71351421/208751572-56bc52a7-41b8-4954-a6b9-a4ae9a6373e7.png)
-
-### validación de caracteres
-![image](https://user-images.githubusercontent.com/71351421/208751719-b27722b2-84a8-4adf-b4de-06b29260daba.png)
+![image](https://user-images.githubusercontent.com/71351421/208798694-2e1cf92f-4caf-40d0-8f95-5b25f3d92836.png)
 
 
 ## Contact
