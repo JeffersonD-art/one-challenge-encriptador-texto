@@ -239,7 +239,7 @@ body {
 
 /* media 768 */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .container {
         width: 100vw;   
     }
@@ -300,7 +300,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
     .container {
         height: 100%;
