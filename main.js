@@ -24,7 +24,7 @@ function foco() {
 }
 
 function encriptar() {
-    let nuevoTexto = document.getElementById("texto").value;
+    let nuevoTexto = document.getElementById("texto").value.trimStart();
     nuevoTexto;
     nuevoTexto = nuevoTexto
         .replace(/e/g, "enter")
