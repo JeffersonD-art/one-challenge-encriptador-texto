@@ -193,7 +193,7 @@ body {
     line-height: 150%;
     padding: 15px;
 }
-.output__boton {
+.boton__span-copiar {
     background-color: #f1e7d1;
     color: #0a3871;
     margin-bottom: 20px;
