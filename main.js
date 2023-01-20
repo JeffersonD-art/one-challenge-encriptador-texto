@@ -3,14 +3,14 @@ const botonD = document.getElementById("botonDec");
 const botonC = document.getElementById("botonCop");
 const botonP = document.getElementById("botonCop");
 const botonB = document.getElementById("botonborrar");
-const letras = /[A-Z~!@#$%^&*()_+|}{[\]\\\/?=><:"`;.,áéíóúàèìòù'1-9]/g;
+const letras = /[A-Z~!@#$%^&*()_+|}{[\]\\\/?=><:"`;.,áéíóúàèìòù'1-9]/g; //[a-z] podria ser mejor pero no funciona como quiero, hay que mejorar!
 
 function validar() {
     let nuevomensaje = document.getElementById("texto").value;
     if (nuevomensaje.match(letras) != null) {
         limpiar();
         foco();
-        Swal.fire({
+        Swal.fire({   //https://sweetalert2.github.io/  (popus box) caja de alerta
             position: "center",
             icon: "error",
             title: "Solo letras minúsculas y sin acentos",
